@@ -1,0 +1,12 @@
+@mixin breakpoint($point) {
+  @if $point == md {
+    // 768px
+    @media (min-width: 48em) {
+      @content;
+    }
+  }
+}
+$XL: 2050px;
+$L: 1500px;
+$M: 1200px;
+$mobile: 1000px;
