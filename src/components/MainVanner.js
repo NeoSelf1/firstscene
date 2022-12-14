@@ -1,7 +1,7 @@
-import React from 'react'
-import './MainVanner.scss'
-import video from '../assets/video/background.mp4'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import './MainVanner.scss';
+import video from '../assets/video/background.mp4';
+import { Link } from 'react-router-dom';
 const MainVanner = () => {
   //prettier-ignore
 
@@ -11,13 +11,13 @@ const MainVanner = () => {
       <div className="left">
         <h3 className='text_1'>First Seen</h3>
         <h2 className='text_2'>FIRST SCENE</h2>
-        <Link to="/portfolio" className="flat-button">
+        <Link to="/firstscene/portfolio" className="flat-button">
             작업물 보기
         </Link>
       </div>
     </div>
     
   )
-}
+};
 
-export default MainVanner
+export default MainVanner;
