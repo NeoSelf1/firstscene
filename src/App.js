@@ -8,10 +8,12 @@ import Typography from './routes/Typography';
 import Symbols from './routes/Symbols';
 
 import MenuBar from './components/MenuBar';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <>
+      <ScrollToTop />
       <Routes>
         <Route path='/firstscene' element={<MenuBar />}>
           <Route index element={<Home />} />
