@@ -1,32 +1,28 @@
-import React from 'react'
-import Symbol_0 from '../components/Symbols/Symbol_0'
-import Symbol_1 from '../components/Symbols/Symbol_1'
-import Symbol_2 from '../components/Symbols/Symbol_2'
-import grid from '../assets/images/gridline.png'
-import Footer from '../components/Footer/Footer'
-import Symbol_3 from '../components/Symbols/Symbol_3'
+import React from 'react';
+import Symbol_0 from '../components/Symbols/Symbol_0';
+import Symbol_1 from '../components/Symbols/Symbol_1';
+import Symbol_2 from '../components/Symbols/Symbol_2';
+import Loader from '../components/Loader';
+import Footer from '../components/Footer/Footer';
+import Symbol_3 from '../components/Symbols/Symbol_3';
 const Symbols = () => {
   return (
     <>
-      {/* <img
+      <Loader />
+      <div
         style={{
-          width: '100%',
-          height: '10000vh',
-          position: 'absolute',
-          left: '0',
-          opacity: '40%',
-          zIndex: 1,
-          pointerEvents: 'none',
+          animation: 'fadeIn 2s backwards',
+          animationDelay: '1.4s',
         }}
-        src={grid}
-        alt="grid"
-      /> */}
-      <Symbol_0 />
-      <Symbol_1 />
-      <Symbol_2 />
-      <Symbol_3 />
-      <Footer />
+        className='content'
+      >
+        <Symbol_0 />
+        <Symbol_1 />
+        <Symbol_2 />
+        <Symbol_3 />
+        <Footer />
+      </div>
     </>
-  )
-}
-export default Symbols
+  );
+};
+export default Symbols;

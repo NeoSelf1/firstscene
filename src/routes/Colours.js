@@ -1,32 +1,27 @@
-import React from 'react'
-import Colours_0 from '../components/Colours/Colours_0'
-import Colours_1 from '../components/Colours/Colours_1'
-import Colours_2 from '../components/Colours/Colours_2'
-
-import grid from '../assets/images/gridline.png'
-import Footer from '../components/Footer/Footer'
+import React from 'react';
+import Colours_0 from '../components/Colours/Colours_0';
+import Colours_1 from '../components/Colours/Colours_1';
+import Colours_2 from '../components/Colours/Colours_2';
+import Loader from '../components/Loader';
+import Footer from '../components/Footer/Footer';
 const Colours = () => {
   return (
     <>
-      {/* <img
+      <Loader />
+      <div
         style={{
-          width: '100%',
-          height: '10000vh',
-          position: 'absolute',
-          left: '0',
-          opacity: '40%',
-          zIndex: 1,
-          pointerEvents: 'none',
+          animation: 'fadeIn 2s backwards',
+          animationDelay: '1.4s',
         }}
-        src={grid}
-        alt="grid"
-      /> */}
-      <Colours_0 />
-      <Colours_1 />
-      <Colours_2 />
-      <Footer />
+        className='content'
+      >
+        <Colours_0 />
+        <Colours_1 />
+        <Colours_2 />
+        <Footer />
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Colours
+export default Colours;

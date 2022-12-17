@@ -1,0 +1,8 @@
+.portfolio {
+  animation: fadeIn 2s backwards;
+  animation-delay: 1.4s;
+  &__content {
+    animation: fadeIn 2s backwards;
+    animation-delay: 2.2s;
+  }
+}

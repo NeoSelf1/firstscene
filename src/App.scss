@@ -1,5 +1,6 @@
 $primary-color: #0a402c;
 
+@import 'animate.css';
 // * {
 //   border: 1px solid red;
 // }
@@ -21,6 +22,7 @@ h2 {
 }
 h1 {
   font-size: 1.6rem;
+  font-weight: 100;
   font-family: Nexen_B;
   white-space: nowrap;
   letter-spacing: 0.84px;
